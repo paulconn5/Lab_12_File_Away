@@ -33,6 +33,7 @@ public class Main {
             lineScanner.close();
         }
 
+        System.out.println("File Name is: " + selectedFile);
         System.out.println("# of characters is : " + characters);
         System.out.println("# of words is: " + words);
         System.out.println("# of lines is: " + lines);
