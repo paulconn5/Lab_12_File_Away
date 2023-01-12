@@ -20,18 +20,7 @@ public class Main {
             fileScanner = new Scanner(selectedFile);
         }
 
-        while (fileScanner.hasNextLine()) {
-            lines++;
-            String line = fileScanner.nextLine();
-            Scanner lineScanner = new Scanner(line);
-            while(lineScanner.hasNext()) {
-                words++;
-                String word = lineScanner.next();
-                characters += word.length();
-            }
 
-            lineScanner.close();
-        }
 
         System.out.println("File Name is: " + selectedFile);
         System.out.println("# of characters is : " + characters);
